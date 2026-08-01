@@ -1,0 +1,9 @@
+allowBuilds:
+  next: true
+  "@next/swc-win32-x64-msvc": true
+  sharp: true
+  unrs-resolver: true
+  "@tailwindcss/oxide-win32-x64-msvc": true
+  "lightningcss-win32-x64-msvc": true
+ignoredBuiltDependencies: []
+
