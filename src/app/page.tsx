@@ -61,7 +61,7 @@ export default async function LandingPage() {
         </h1>
 
         <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto font-normal leading-relaxed">
-          Experience career choices, market investments, and random life events in a risk-free financial simulation guided by your personal AI coach.
+          Experience career choices, market investments, and random life events in a risk-free financial simulation guided by your personalized AI Financial Twin.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -108,9 +108,9 @@ export default async function LandingPage() {
             <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-2xl flex items-center justify-center">
               🤖
             </div>
-            <h4 className="text-lg font-bold text-white">AI Financial Coach</h4>
+            <h4 className="text-lg font-bold text-white">AI Financial Twin</h4>
             <p className="text-xs text-gray-400 leading-relaxed">
-              Powered by Anthropic Claude. Receives your monthly metrics, provides tailored feedback, and teaches key financial concepts.
+              Knows your profile in detail to answer hypotheticals, compute math, and teach broad financial concepts.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ export default async function LandingPage() {
             <div className="text-2xl mb-4">🎯</div>
             <h4 className="text-base font-bold text-white mb-2">Learn & Level Up</h4>
             <p className="text-xs text-gray-400 leading-relaxed">
-              Receive AI coaching notes, complete knowledge quizzes, unlock achievement badges, and top the leaderboard.
+              Receive smart coaching notes, complete knowledge quizzes, unlock achievement badges, and top the leaderboard.
             </p>
           </div>
         </div>

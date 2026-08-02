@@ -3,6 +3,7 @@ import { createClient } from '@/utils/supabase/server'
 import Navbar from '@/components/Navbar'
 import AchievementsGrid, { UserAchievementRecord } from '@/components/AchievementsGrid'
 import FinancialCharts from '@/components/FinancialCharts'
+import FinancialTwinDrawer from '@/components/FinancialTwinDrawer'
 
 export default async function DashboardPage() {
   const supabase = await createClient()
@@ -71,7 +72,7 @@ export default async function DashboardPage() {
             Welcome back, <span className="bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">{username}</span>
           </h1>
           <p className="text-gray-400 text-xs sm:text-sm max-w-lg mb-8 leading-relaxed">
-            Monitor your financial health trajectories, complete educational modules, and advance your simulation session.
+            Monitor your financial health trajectories, complete educational modules, and consult your AI Financial Twin.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -146,6 +147,9 @@ export default async function DashboardPage() {
           <AchievementsGrid earnedAchievements={(earnedAchievements || []) as UserAchievementRecord[]} />
         </div>
       </div>
+
+      {/* Floating AI Financial Twin Drawer */}
+      {activeSession && <FinancialTwinDrawer financialProfile={activeSession} />}
     </main>
   )
 }
